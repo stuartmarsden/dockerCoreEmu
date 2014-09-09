@@ -19,3 +19,6 @@ Most useful tools are included like:
 * Mgen
 * iperf
 * Openssh server
+
+Known issues:
+* Tcpdump does not seem to work within docker. Wireshark does though
