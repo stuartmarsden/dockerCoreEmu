@@ -10,7 +10,7 @@ This image will run the Core-GUI and the server. This will be available through 
 
 Run the image to use it:
 
-    docker run -d --privileged -p 5900:5900 stuartmarsden/coreemu
+    docker run -d --privileged -p 5900:5900 stuartmarsden/dockercoreemu
 
 It must be run with privileged or it cannot create namespaces within the container which is needed for Core. You can then use a VNC client and connect on localhost:5900
 
