@@ -15,7 +15,7 @@ RUN wget http://adjacentlink.com/downloads/emane/emane-0.9.2-release-1.ubuntu-14
 RUN tar zxvf emane-0.9.2-release-1.ubuntu-14_04.amd64.tar.gz
 RUN dpkg -i emane-0.9.2-release-1/debs/ubuntu-14_04/amd64/emane*.deb
 
-RUN mkdir /.vnc
+RUN mkdir ~/.vnc
 RUN x11vnc -storepasswd coreemu ~/.vnc/passwd
 RUN rm -r *.deb emane-0.9.2-release-1*
 ADD startCore.sh startCore.sh
