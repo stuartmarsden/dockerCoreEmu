@@ -10,9 +10,9 @@ This image will run the Core-GUI and the server. This will be available through 
 
 Run the image to use it:
 
-    docker run -d --privileged -p 5900:5900 stuartmarsden/dockercoreemu
+    docker run -d --cap-add=NET_ADMIN --cap-add=SYS_ADMIN -p 5900:5900 stuartmarsden/dockercoreemu
 
-It must be run with privileged or it cannot create namespaces within the container which is needed for Core. You can then use a VNC client and connect on localhost:5900
+It must be run with SYS_ADMIN or it cannot create namespaces within the container which is needed for Core. It requires NET_ADMIN to make the internal networks. You can then use a VNC client and connect on localhost:5900
 
 Most useful tools are included like:
 * Wireshark
